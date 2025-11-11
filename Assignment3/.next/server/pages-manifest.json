@@ -3,7 +3,8 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
+  "/register": "pages/register.js",
+  "/api/register": "pages/api/register.js",
   "/chat": "pages/chat.js",
-  "/api/socket": "pages/api/socket.js",
-  "/api/messages": "pages/api/messages.js"
+  "/api/socket": "pages/api/socket.js"
 }

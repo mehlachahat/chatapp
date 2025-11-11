@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link'; // 1. Import Link
 import styles from '../styles/Login.module.css';
 
 export default function Login() {
@@ -41,6 +42,14 @@ export default function Login() {
             Login
           </button>
         </form>
+
+        {/* 2. Add this link block */}
+        <p className={styles.subtitle} style={{ marginTop: '1rem' }}>
+          Don't have an account?{' '}
+          <Link href="/register" legacyBehavior>
+            <a className={styles.link}>Register here</a>
+          </Link>
+        </p>
       </div>
     </div>
   );
